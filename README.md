@@ -1,17 +1,17 @@
 
-# Backend of TravelWorld 🌍
+# TravelWorld 🌍
 
 A Fullstack Tours & Travels Web App Using MERN Stack 💫
 
-## Frontend Repository
+## Backend Repository
 
-- [TravelWorld Frontend Repository](https://github.com/shuence/Travel-World)
+- [TravelWorld Backend Repository](https://github.com/shuence/Bakend-for-TravelWorld)
 
 ## Resources
 
-- [Express Docs](https://expressjs.com/)
-- [MongoDB Docs](https://docs.mongodb.com/)
-- [MongoDB Forum](https://www.mongodb.com/community/forums/)
+- [React Docs](https://beta.reactjs.org/)
+- [BootStrap](https://getbootstrap.com/docs/)
+- [ReactStrap](https://github.com/reactstrap/reactstrap)
 - [Stackoverflow](https://stackoverflow.com/)
 
 ## Authors
@@ -28,76 +28,61 @@ A Fullstack Tours & Travels Web App Using MERN Stack 💫
 
 ![image](https://github.com/shuence/FitClub/assets/65482186/4c863ee9-2e02-4e98-95c0-e122cf91320e)
 
+<https://github.com/shuence/Travel-World/assets/65482186/69a5ebf9-85d7-4f65-a8a2-066dceebbc24>
+
 ## Setup
 
 To Setup this project run
 
 ```bash
-git clone <https://github.com/shuence/Backend-for-TravelWorld>
-cd Backend-for-TravelWorld
+git clone <https://github.com/shuence/Travel-World>
+cd Travel-World
 yarn
-yarn dev
+yarn serve
 ```
 
 ## Environment Variables
 
-```bash
-MONGODB_URI=your_MongoDB_connection_URI
-PORT=4000
-SECRET=your_secret_key_for_JWT_tokens
-```
+`REACT_APP_BASE_URL`= <http://localhost:4000/api/v1>
 
-## Backend Features
+## Features
 
-- **API Endpoints:** Define API endpoints to handle various operations, such as tours listing, user authentication, booking management, and handling contact form submissions.
+- **Tours Listing:** Display a list of available tours for users to explore.
+- **Featured Tours:** Highlight and showcase special or popular tours on the homepage.
+- **Tour Details:** Provide comprehensive information about each tour, including description, itinerary, price, and more.
+- **Gallery:** Showcase high-quality images and videos of destinations and tour experiences.
+- **User Authentication:** Allow users to create accounts and log in to access personalized features.
+- **Booking System:** Enable users to book tours online with a secure and easy-to-use booking system.
+- **Search Tours:** Implement a search functionality to help users find specific tours based on their preferences.
+- **Reviews and Ratings:** Allow users to leave reviews and ratings for tours they have experienced.
+- **Responsive Design:** Ensure the website is optimized for various devices, including desktops, tablets, and smartphones.
+- **Newsletter Signup:** Allow users to subscribe to a newsletter to receive updates and promotions.
+- **User Reviews and Testimonials:** Showcase positive reviews and testimonials from previous customers to build trust.
+- **Contact Form:** Provide a contact form for users to get in touch with inquiries or feedback.
+- **Blogs:** Added Blogs feature to provide more information to customers.
+- **Alerts:** Appropriate alerts of errors and success for better user experience.
+- **FAQ's:** Include a frequently asked questions (FAQ) section to address common queries from users.
+- **Analytics** Integrated Google Analytics for analytics.
 
-- **User Authentication:** Implement user authentication using JSON Web Tokens (JWT) to allow users to create accounts, log in, and access personalized features.
+## What I learned
 
-- **Database Integration:** Integrate MongoDB, a NoSQL database, to store data related to tours, user profiles, bookings, and contact inquiries.
+While building this project, I embarked on my first full-stack journey, transitioning from frontend development to working with the backend. The journey was both exciting and challenging, and I learned a lot along the way:
 
-- **Express Middleware:** Utilize Express middleware for tasks such as handling CORS, parsing request bodies, and logging.
+1. **Frontend Gracefulness:** As I crafted the frontend, I encountered various errors, but I embraced each challenge as an opportunity to learn. With useState and other hooks, along with Bootstrap for styling, I built an intuitive and responsive user interface.
 
-- **CRUD Operations:** Set up CRUD (Create, Read, Update, Delete) operations to manage tour data, user profiles, and contact form entries.
+2. **Backend Confidence:** Setting up the Express and MongoDB server initially seemed daunting, but I persisted. Working on controllers for API calls and defining routes took time, but I gained confidence as I overcame each obstacle.
 
-- **Error Handling:** Implement error handling middleware to provide appropriate responses for various types of errors.
+3. **Expanded Toolkit:** Throughout the project, I explored additional React concepts like useEffect, useContext, and React Router DOM for seamless navigation between components and managing state effectively.
 
-- **Search Functionality:** Implement search functionality to help users find specific tours based on various criteria, such as location, category, and price range.
+4. **Deployment Know-How:** Deploying the backend server was a crucial step in making the application accessible online. I learned to configure the production environment, manage dependencies, and ensure security with HTTPS and authentication.
 
-- **Authentication Middleware:** Create middleware to protect certain routes and ensure that only authenticated users can access specific resources.
+5. **Continuous Improvement:** I adopted a proactive approach to monitoring and logging server performance, identifying potential issues early on and implementing CI/CD pipelines for smooth and automated deployments.
 
-- **Authorization:** Set up authorization to control access to certain routes and features based on user roles.
+6. **The Joy of Problem-Solving:** Despite encountering obstacles, I discovered the joy of problem-solving and the satisfaction that comes with finding solutions to complex challenges.
 
-- **Validation:** Implement data validation to ensure that incoming data meets the required format and criteria.
+7. **Version Control and Rollbacks:** I grasped the importance of version control not only for the codebase but also for server configurations, facilitating easy rollbacks if needed.
 
-- **Contact Form Handling:** Handle contact form submissions from users and store the inquiries in the database for later review.
-
-- **Error Logging:** Implement logging mechanisms to track and log errors and server activities for monitoring and debugging.
-
-- **Deployment:** Prepare the backend server for deployment to a hosting service, ensuring it is secure and performant in a production environment.
-
-These backend features work in conjunction with the frontend to provide a seamless and fully functional Tours & Travels web application.
-
-## What I Learned
-
-- Backend Development: I embarked on my first full-stack journey, transitioning from frontend development to working with the backend. I gained hands-on experience in building the server-side of the application.
-
-- Express.js: I learned how to set up an Express.js server to handle HTTP requests and define API routes for various functionalities.
-
-- MongoDB Integration: I successfully integrated MongoDB as the backend database to store and retrieve tour and contact data.
-
-- API Calls and Controllers: I worked on creating API routes and defining controllers to handle CRUD operations (Create, Read, Update, Delete) for tours and contacts.
-
-- Environment Variables: I learned to use environment variables to store sensitive information like database connection URI and secret keys securely.
-
-- Deployment: I gained knowledge of deploying the backend server to make the application accessible online. I configured the production environment, managed dependencies, and ensured security with HTTPS and authentication.
-
-- Error Handling: I implemented error handling techniques to provide meaningful responses to users in case of errors or invalid requests.
-
-- Continuous Integration/Continuous Deployment (CI/CD): I set up CI/CD pipelines to automate the deployment process, ensuring smooth and efficient updates to the application.
-
-- Version Control: I practiced version control for the backend codebase, enabling me to collaborate effectively and roll back changes if needed.
-
-Overall, building the backend of the TravelWorld app taught me valuable skills in server-side development, database integration, and deployment, making me a more well-rounded full-stack developer. I now have the confidence to handle complex backend tasks and work on complete web applications with a blend of frontend and backend expertise.
+Overall, this project marked a significant milestone in my journey as a full-stack developer. Combining frontend and backend expertise, I can now confidently bring complete web applications to life and tackle new challenges with enthusiasm.
 
 ## Tech Stack
 
@@ -115,7 +100,6 @@ Overall, building the backend of the TravelWorld app taught me valuable skills i
 - Introduce advanced search filters for customized tour searches.
 - Integrate geolocation services for location-based tour suggestions.
 - Implement a user dashboard for managing and tracking bookings.
-- Implement Admin dashboard for managing and updating tours and other data.
 
 # Hi, I'm Shuence! 👋
 
